@@ -1,0 +1,123 @@
+%\documentclass[10pt]{letter}
+%\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% compile with LuaLatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{report}
+\usepackage{epsfig}
+\usepackage{amssymb,amsmath,amsfonts}
+\usepackage[activeacute,american]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+\usepackage{cite}
+\usepackage{csquotes}
+\usepackage{esvect}
+\usepackage[acronym,nonumberlist]{glossaries}
+\renewcommand{\acronymname}{Nomenclature}
+\usepackage{multicol}
+\usepackage{caption} 
+\usepackage{float}
+\usepackage[
+    math-style=ISO,      % Upper Case Greek is in italics
+    bold-style=ISO,      % Bold math is in italics
+    partial=upright,     % nabla and partial upright
+    nabla=upright,
+  ]{unicode-math}
+\topmargin 1.2cm 
+\textwidth 16.1cm
+\textheight 22.5cm
+\oddsidemargin 0.7cm
+\setcounter{tocdepth}{5}
+\addtolength{\voffset}{-2.4cm}
+\addtolength{\hoffset}{-0.5cm}
+\usepackage{booktabs}
+\usepackage{setspace}
+%\doublespacing
+\onehalfspacing
+\usepackage{caption}
+ \captionsetup[figure]{labelfont={bf},name={Figura},labelsep=period}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% citas
+% \footnotetext{Mott, Robert L. Mecanica de Fluidos 6/e. Pearson educación, 2006.}
+% \footnotetext{Pritchard, Philip J. Fox and McDonald’s Introduction to Fluid Mechanics (8th ed.). John Wiley $\&$ Sons. (2011).}
+% \footnotetext{Munson, Bruce R., et al. "Fundamentals of Fluid Mechanics, John Wiley $\&$ Sons." Inc., USA (2006).}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\centering{ \textbf{\Large{Mec\'anica de fluidos}}}
+
+%\centering {\Large{2$^\circ$ semestre 2020: 541209-1}}
+\vspace{1cm}
+
+\flushleft{ \large \underline{\textbf{Pr\'actica 4: An\'alisis diferencial}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+
+\underline {Problema 1 (P. 7.10 Fox\footnote{footnotes working fine}):}
+\vspace{0.2cm}
+
+Experimentos han demostrado que la caida de presi\'on para el flujo a trav\'es del orificio de diametro $d$ en una placa montada en una tuberia de diametro $D$ puede ser expresada como: $\Delta p = p_1 - p_2 = f(\rho,\mu,{V},d,D)$. Se le encomienda realizar algunos experimentos para determinar esta relaci\'on. Obtenga los grupos adimensionales resultantes.
+\vspace{0.2cm}
+
+\underline {Problema 2 (P. 7.22 Fox):}
+\vspace{0.2cm}
+
+La energ\'ia que se libera durante una explosi\'on, $E$, es una funci\'on del tiempo tras la detonaci\'on $t$, el radio de explosi\'on $R$ al tiempo $t$, la presi\'on ambiental $p$ y densidad $\rho$. Determine, mediante an\'alisis dimensional, la forma general de la expresi\'on para $E$ en funci\'on de las otras variables.
+\vspace{0.2cm}
+
+\underline {Problema 3 (P. 7.35 Fox):}
+\vspace{0.2cm}
+
+Pequeñas gotas de l\'iquido se forman cuando un jet de l\'iquido se separa en procesos de spray e inyecci\'on de combustibles. Se piensa que el diametro de las gotas resultantes, $d$, depende de la densidad del l\'iquido, viscosidad, tensi\'on superficial, velocidad $V$ y diametro $D$ del jet. ¿Cuantos grupos adimensionales son requeridos para caracterizar el proceso?. Determine los grupos adimensionales.
+\vspace{0.2cm}
+
+\underline {Problema 4 (P. 7.55 Fox):}
+\vspace{0.2cm}
+
+Los diseñadores de un globo meteorol\'ogico, cuyo prop\'osito es recolectar muestras de poluci\'on atmosf\'erica, desean conocer la fuerza de arrastre a la que el globo ser\'a sometido. Se anticipa que la velocidad m\'axima del viento ser\'a de $5$\,m/s (es razonable suponer que el aire se encuentra a una temperatura de $20$\,$^\circ$C). Un modelo a escala de 1:20 se construye para realizar pruebas en agua a $20$\,$^\circ$C. 
+\begin{itemize}
+\item ¿Qu\'e velocidad de agua se requiere para modelar al propotipo?.
+\item Si a esta velocidad la fuerza de arrastre medida en el modelo es de $2$\,kN. ¿C\'ual ser\'a la fuerza de arrastre correspondiente en el prototipo?.
+\end{itemize}
+\vspace{0.2cm}
+
+
+\footnotetext{Pritchard, Philip J. Fox and McDonald’s Introduction to Fluid Mechanics (8th ed.). John Wiley $\&$ Sons. (2011).}%%%%%%%%%%%%%%%%
+
+\newpage
+
+\underline {Problema 5 (P. 7.65 Fox):}
+\vspace{0.2cm}
+
+Las caracter\'isticas fluido-din\'amicas de una pelota de golf son testeadas utilizando un modelo en un tunel de viento. Los parametros dependientes corresponden a la fuerza de arrastre, $F_D$, y la fuerza de sustentaci\'on, $F_L$, sobre la pelota. Los par\'ametros independientes deben incluir la velocidad \'angular, $\omega$ y profundidad de los hoyuelos, $d$. Determine par\'ametros adimensionales adecuados y exprese la dependencia funcional entre ellos. Un golfista profesional puede golpear la pelota a $V=75$\,m/s y  $\omega=8100$\,rpm. ¿C\'ual ser\'a el di\'ametro necesario del modelo para modelar estas condiciones en un tunel de viento, cuya velocidad m\'axima es de $25$\,m/s?. ¿Qu\'e tan r\'apido rotar\'a el modelo? (El diametro de una pelota de golf en EE.UU. es de $4.27$\,cm)
+\vspace{0.2cm}
+
+
+\underline {Problema 6 (P. 7.88 Fox):}
+\vspace{0.2cm}
+
+Una bomba centrifuga funcionando a una velocidad $\omega=800 rpm$ tiene los siguientes datos para flujo volum\'etrico $Q$ y diferencia de presi\'on $\Delta p$:
+\vspace{0.5cm}
+
+\begin{center}
+\begin{tabular}{l*8c}
+\toprule
+$Q$\,(ft$^3$/min) & 0 & 50 & 75 & 100 & 120 & 140 & 150 & 165 \\
+\midrule
+$\Delta p$\,(psf) & 7.54 & 7.29 & 6.85 & 6.12 & 4.80 & 3.03 & 2.38 & 1.23 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\vspace{0.5cm}
+
+La diferencia de presi\'on es una funci\'on del flujo volum\'etrico, velocidad, diametro del propulsor $D$, y densidad del agua $\rho$. Graf\'ique la diferencia de presi\'on vs. flujo volum\'etrico utilizando la informaci\'on previa. Encuentre los grupos adimensionales para este problema y graf\'iquelos. Real\'ice un an\'alisis num\'erico de las curvas y basado en este an\'alisis genere y grafique datos para diferencia de presi\'on vs. flujo volum\'etrico para velocidades del propulsor de $600$\,rpm y $1200$\,rpm.
+
+%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
